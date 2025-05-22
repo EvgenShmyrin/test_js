@@ -2,7 +2,7 @@
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((asd) => asd.json())
     .then((users) => {
-        // створення обгортки divMain для виведення id,name всех user в index.html
+        // створення обгортки divMain для виведення id,name всех user в HTML_application.html
         let divMain = document.createElement('div');
         divMain.classList.add('usersDiv');
         // Отримання елементів масиву
