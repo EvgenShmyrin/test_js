@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        #mainDiv{
+            width: 450px;
+            height: 500px;
+            border: 1px solid black;
+            background: darkgray;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #monitor{
+            width: 200px;
+            height: 200px;
+            background: white;
+        }
+        #listDiv{
+            display: flex;
+        }
+        #buttons{
+            display: flex;
+            justify-content: center;
+            /*align-items: center;*/
+            flex-direction: column;
+        }
+
+    </style>
 </head>
 <body>
+    <div id="mainDiv">
+        <h3>Test</h3>
+        <form id="myForm">
+            <label>
+                Name/Value Pair<br>
+                <input id="input" type="text"  name="input" placeholder="Name=Value">
+                <button id="inputButton">Add</button>
+            </label>
+            <p>Name/Value Pair list</p>
+            <div id="listDiv">
+                <div id="monitor"></div>
+                <div id="buttons">
+                    <button id="button1">Sort by name</button>
+                    <button id="button2">Sort by value</button>
+                    <button id="button3">Delete</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
 <script src="HTML_application.js"></script>
 </body>
 </html>
