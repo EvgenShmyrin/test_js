@@ -35,6 +35,12 @@
             /*align-items: center;*/
             flex-direction: column;
         }
+        /*#divInput{*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    flex-direction: column;*/
+        /*}*/
 
     </style>
 </head>
@@ -42,11 +48,14 @@
     <div id="mainDiv">
         <h3>Test</h3>
         <form id="myForm">
-            <label>
-                Name/Value Pair<br>
-                <input id="input" type="text"  name="input" placeholder="Name=Value">
-                <button id="inputButton">Add</button>
-            </label>
+            <div id="divInput">
+                <p id="error"></p>
+                <label>
+                    Name/Value Pair<br>
+                    <input id="input" type="text" name="input" placeholder="Name=Value">
+                    <button id="inputButton">Add</button>
+                </label>
+            </div>
             <p>Name/Value Pair list</p>
             <div id="listDiv">
                 <div id="monitor"></div>
