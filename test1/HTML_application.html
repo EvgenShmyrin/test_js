@@ -2,63 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        body{
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-        }
-        #mainDiv{
-            width: 450px;
-            height: 500px;
-            border: 1px solid black;
-            background: darkgray;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        #monitor{
-            width: 200px;
-            height: 200px;
-            background: white;
-        }
-        #listDiv{
-            display: flex;
-        }
-        #buttons{
-            display: flex;
-            justify-content: center;
-            /*align-items: center;*/
-            flex-direction: column;
-        }
-        /*#divInput{*/
-        /*    display: flex;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*    flex-direction: column;*/
-        /*}*/
-
-    </style>
+    <title>Task 1</title>
+    <link rel="stylesheet" href="stylePC.css">
+    <link rel="stylesheet" href="stylePhone.css">
 </head>
 <body>
     <div id="mainDiv">
         <h3>Test</h3>
         <form id="myForm">
             <div id="divInput">
-                <p id="error"></p>
-                <label>
-                    Name/Value Pair<br>
-                    <input id="input" type="text" name="input" placeholder="Name=Value">
+                <label id="labelInput">
+                    <span>Name/Value Pair</span><br>
+                    <input id="input" type="text" name="input" placeholder="Name=Value" maxlength="30">
                     <button id="inputButton">Add</button>
                 </label>
             </div>
             <p>Name/Value Pair list</p>
             <div id="listDiv">
-                <div id="monitor"></div>
+                <div id="monitor">
+                </div>
                 <div id="buttons">
                     <button id="button1">Sort by name</button>
                     <button id="button2">Sort by value</button>
@@ -66,6 +28,7 @@
                 </div>
             </div>
         </form>
+        <p id="text">Data must consist of numbers and Latin letters</p>
 
     </div>
 <script src="HTML_application.js"></script>
