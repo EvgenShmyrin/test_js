@@ -1,3 +1,4 @@
+/*Характеристики зовнішньої оболонки HTML_application для гаджетів розміром екрана меньше 600px */
 @media screen and (max-width: 600px) {
     #mainDiv {
         width: 350px;

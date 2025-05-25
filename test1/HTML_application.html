@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 1</title>
+    <title>HTML_application</title>
     <link rel="stylesheet" href="stylePC.css">
     <link rel="stylesheet" href="stylePhone.css">
 </head>
@@ -12,7 +12,10 @@
         <form id="myForm">
             <div id="divInput">
                 <label id="labelInput">
-                    <span>Name/Value Pair</span><br>
+                    <div  id="label-header">
+                        <span>Name/Value Pair</span>
+                        <div id="error-message"></div>
+                    </div>
                     <input id="input" type="text" name="input" placeholder="Name=Value" maxlength="30">
                     <button id="inputButton">Add</button>
                 </label>
@@ -28,7 +31,10 @@
                 </div>
             </div>
         </form>
-        <p id="text">Data must consist of numbers and Latin letters</p>
+        <div  class="text">
+            <p>Input data must consist of numbers and Latin letters</p>
+            <p>аnd contain no more than 30 characters.</p>
+        </div>
 
     </div>
 <script src="HTML_application.js"></script>

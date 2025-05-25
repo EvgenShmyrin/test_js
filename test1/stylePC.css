@@ -1,3 +1,4 @@
+/*Характеристики зовнішньої оболонки HTML_application для ПК, ноутбуків, планшетів */
 body {
     width: 100vw;
     height: 100vh;
@@ -67,13 +68,35 @@ button {
     width: 100px;
     height: 30px;
     border-radius: 5px;
-    background: #2b2a2a;
+    background: #493a3a;
     color: white;
+    border: none;
 }
 
-#text {
-    margin-top: 40px;
+.text {
+    margin-top: 30px;
     font-size: 14px;
     text-align: center;
     color: #5a5a5a;
+}
+
+.text p {
+    margin: 0;
+}
+
+#label-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.input-error {
+    border: 2px solid red;
 }
